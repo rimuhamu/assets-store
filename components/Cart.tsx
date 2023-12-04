@@ -17,6 +17,7 @@ import { formatPrice } from '@/lib/utils';
 export const Cart = () => {
   const itemCount = 1;
   const fee = 1;
+  const cartTotal = 10;
   return (
     <Sheet>
       <SheetTrigger className='group -m-2 items-center p-2'>
@@ -35,14 +36,14 @@ export const Cart = () => {
         {itemCount > 0 ? (
           <>
             <div className='flex w-full flex-col pr-6'>
-              <ScrollArea>
+              {/* <ScrollArea>
                 {items.map(({ product }) => (
                   <CartItem
                     product={product}
                     key={product.id}
                   />
                 ))}
-              </ScrollArea>
+              </ScrollArea> */}
             </div>
             <div className='space-y-4 pr-6'>
               <Separator />
