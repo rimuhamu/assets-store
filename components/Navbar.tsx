@@ -4,6 +4,7 @@ import { Icons } from './Icons';
 import { NavItems } from './NavItems';
 import { buttonVariants } from './ui/button';
 import { UserAccountNav } from './UserAccountNav';
+import { Cart } from './Cart';
 
 export const Navbar = () => {
   const user = null;
@@ -65,6 +66,9 @@ export const Navbar = () => {
                       />
                     </div>
                   )}
+                  <div className='ml-4 flow-root lg:ml-6'>
+                    <Cart />
+                  </div>
                 </div>
               </div>
             </div>
